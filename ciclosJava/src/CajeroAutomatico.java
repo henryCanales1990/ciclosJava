@@ -20,13 +20,13 @@ public class CajeroAutomatico {
             switch (opcion){
                 case 1 -> System.out.println("Su saldo es: $"+ saldo);
                 case 2 -> {
-                    System.out.println("Indrese la cantidad que desea retirar");
+                    System.out.println("Ingrese la cantidad que desea retirar");
                     var cantidadRetirar = consola.nextDouble();
                     if (cantidadRetirar<=saldo){
                         saldo = saldo-cantidadRetirar;
                         System.out.println("Su nuevo saldo es : $"+ saldo);
                     }
-                    else System.out.println("Su saldo es infuficiente");
+                    else System.out.println("Su saldo es infuficiente"+ saldo);
                 }
                 case 3 -> {
                     System.out.println("Indrese la cantidad que desea Depositar");
